@@ -13,8 +13,11 @@ const useFormulario = (inicial) => {
 
         })
     }
+    const reset = ( ) => {
+        setFormu(inicial)
+    }
 
-    return [formu, handleChange]
+    return [formu, handleChange, reset]
     
 }
 
