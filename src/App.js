@@ -27,6 +27,7 @@ function App() {
 
 
   return (
+    <div style={{marginTop:'15%'}}>
     <Container>
       <Card>
         <div style={{padding:20}}>
@@ -35,18 +36,23 @@ function App() {
               label='Nombre'
               name='name' value={formu.name}
               onChange={handleChange}
+              placeholder="Nombre"
             />
             <Input
               label='Apellido'
               name='lastname'
               value={formu.lastname}
               onChange={handleChange}
+              placeholder="Name"
+              placeholder="Apellido"
+
             />
             <Input
             label='Correo'
             name='email'
             value={formu.email}
             onChange={handleChange}
+            placeholder="Correo"
           />
           <Button >Enviar</Button>
           </form>
@@ -61,6 +67,7 @@ function App() {
         </Card>
       </Card>
     </Container>
+    </div>
   );
 }
 
