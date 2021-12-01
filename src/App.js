@@ -8,36 +8,42 @@ import Container from './components/Container'
 
 function App() {
   const [user, setUser] = useState([])
-  
 
-  const submit = usuario  => {
+
+  const submit = usuario => {
     setUser([
-      ...user, 
+      ...user,
       usuario,
     ])
   }
   console.log(user);
   return (
-    <div style={{marginTop:'14%'}}>
-    <Container>
-      <Card>
-        <div style={{padding:21}}>
-         <Form submit={submit}/>
-        </div>
-        
-      </Card>
-      <Card>
+    <div style={{ marginTop: '14%' }}>
+      <Container>
+        <Card>
+          <div style={{ padding: 21 }}>
+            <Form submit={submit} />
+          </div>
+
+        </Card>
+        <Card>
           <ul>
-            {user.map(userx => 
-              
+            {user.map(userx =>
+
               <li key={userx.email}>{`${userx.name}, ${userx.lastname}, ${userx.email}`}</li>
-              
-              )}
+
+            )}
           </ul>
         </Card>
-    </Container>
+      </Container>
     </div>
   );
 }
 
 export default App;
+
+
+
+
+
+// const [user, setUser] = useState([])
