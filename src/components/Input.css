@@ -17,4 +17,5 @@
     color:rgb(135, 127, 118);
     border-radius: 4px;
     width: 100%;
+    box-sizing: border-box;
 }
