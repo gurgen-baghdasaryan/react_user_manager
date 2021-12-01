@@ -1,5 +1,6 @@
 import useFormulario from './Hooks/useFormulario';
 import Input from './components/Input';
+import Card from './components/Card';
 
 
 function App() {
@@ -7,8 +8,19 @@ function App() {
   console.log(formu);
   return (
     <form >
-      <Input label='Nombre' name='name' value={formu.name} onChange={handleChange} />
-      <Input label='Apellido' name='lastname' value={formu.lastname} onChange={handleChange} />
+      <Card>
+        <Input
+          label='Nombre'
+          name='name' value={formu.name}
+          onChange={handleChange}
+        />
+        <Input
+          label='Apellido'
+          name='lastname'
+          value={formu.lastname}
+          onChange={handleChange}
+        />
+      </Card>
     </form>
   );
 }
